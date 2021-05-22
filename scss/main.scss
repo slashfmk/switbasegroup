@@ -1,5 +1,18 @@
+@use "abstracts";
+@use "components";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
-    background-color: green;
+    background-color: abstracts.$primary-color;
     font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    padding: 5rem;
+   // @include mixins.color-opacity(red, .3);
+    //background-color: abstracts.$primary-dark;
 }
