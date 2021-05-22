@@ -1,0 +1,37 @@
+
+@use "../abstracts";
+
+.button {
+  width: 100%;
+  border: none;
+  padding: .9rem .8rem;
+  font-weight: 500;
+  background-color: abstracts.$primary-color;
+  margin: .3rem;
+  color: abstracts.$primary-white;
+  @include abstracts.default-font;
+  @include abstracts.border-radius(.3);
+
+  transition: all .5s;
+
+  &:hover{
+    cursor: pointer;
+    border: none;
+    background-color: abstracts.$primary-dark;
+  }
+
+  &--opaque{
+    border: solid 1px abstracts.$primary-color;
+    background-color: transparent;
+    color: abstracts.$primary-color;
+
+    &:hover {
+      cursor: pointer;
+      border: solid 1px abstracts.$primary-color;
+      color: abstracts.$primary-white;
+      background-color: abstracts.$primary-color;
+    }
+  }
+
+
+}

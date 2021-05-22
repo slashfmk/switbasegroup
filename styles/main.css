@@ -4,18 +4,128 @@
 /* Large (lg) */
 /* Extra Large (xl) */
 /* Two Extra Large (xxl) */
-*, *::before, *::after {
-  box-sizing: border-box;
+.flex-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
-body {
-  background-color: green;
-  font-size: 2.3rem;
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  padding: 0.9rem 0.8rem;
+  font-weight: 500;
+  background-color: #2980ef;
+  margin: 0.3rem;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
+  border-radius: 0.3rem;
+  transition: all 0.5s;
+}
+.button:hover {
+  cursor: pointer;
+  border: none;
+  background-color: #343a40;
+}
+.button--opaque {
+  border: solid 1px #2980ef;
+  background-color: transparent;
+  color: #2980ef;
+}
+.button--opaque:hover {
+  cursor: pointer;
+  border: solid 1px #2980ef;
+  color: #fff;
+  background-color: #2980ef;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form__link {
+  text-align: center;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem;
+  border: solid 1px #999;
+  color: #343a40;
+  margin: 0.3rem 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.25rem;
+}
+.input::placeholder {
+  color: #aaa;
+}
+.input:focus {
+  border: solid 1px #343a40;
+  color: #343a40;
+}
+
+.center {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: linear-gradient(rgba(52, 58, 64, 0.9) 0%, rgba(52, 58, 64, 0.9) 50%), url("https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #2980ef;
+  background-position: center center;
+}
+.container__sign-in {
+  align-self: center;
+  justify-self: center;
+  width: 30rem;
+  height: 30rem;
   padding: 5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.title__sub {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e9ecef;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
 }
 
 /*# sourceMappingURL=main.css.map */

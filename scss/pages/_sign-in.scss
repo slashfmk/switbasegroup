@@ -1,0 +1,20 @@
+@use "../abstracts";
+@use "../components";
+@use "../layout";
+
+
+.title{
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+
+  &__sub{
+    text-align: center;
+    font-size: .9rem;
+    margin: .5rem 0;
+  }
+}
+
+//.container--sign-in{
+//  background: url("../../assets/images/bg_home.jpg");
+//}

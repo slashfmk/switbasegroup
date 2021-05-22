@@ -1,0 +1,22 @@
+
+@use "../abstracts";
+
+.input {
+  width: 100%;
+  padding: .7rem;
+  border: solid 1px #999;
+  color: abstracts.$primary-dark;
+  margin: .3rem .2rem;
+  @include abstracts.default-font;
+  @include abstracts.border-radius(.25);
+
+  &::placeholder{
+    color: #aaa;
+  }
+
+  &:focus{
+    border: solid 1px abstracts.$primary-dark;
+    color: abstracts.$primary-dark;
+  }
+
+}

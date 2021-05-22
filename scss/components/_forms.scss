@@ -1,0 +1,15 @@
+
+@use "../abstracts";
+
+.form{
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__link {
+    text-align: center;
+    margin: .5rem 0;
+    display: block;
+  }
+
+}

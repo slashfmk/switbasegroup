@@ -1,4 +1,26 @@
+
 @mixin color-opacity($color, $opacity) {
   background-color: rgba($color, $opacity);
 }
 
+// Medium devices
+@mixin medium-device {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin large-device {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin border-radius ($border) {
+    border-radius: $border+rem;
+}
+
+@mixin default-font(){
+  font-family: 'Montserrat', sans-serif;
+}

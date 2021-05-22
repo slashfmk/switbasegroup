@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="styles/main.css"/>
     <title>Document crazy</title>
 </head>
+
 <body>
-
 <div class="container">
+    <div class="container__sign-in">
 
-    <div class="title">Sign In</div>
-    <div class="title__sub">Please enter your information</div>
+        <div class="title">Sign In</div>
+        <div class="title__sub">Please enter your information</div>
 
-    <div class="form">
-        <form method="post" class="form__container" action="#">
-            <input type="text" class="form__input" name="username" placeholder="Username"/>
-            <input type="password" class="form__input" name="password" placeholder="Password"/>
-            <button type="submit" class="form__submit button">Sign In</button>
-        </form>
+        <div class="form">
+            <form method="post" class="form__container flex-column">
+                <input type="text" class="form__input input" name="username" placeholder="Username or Email"/>
+                <input type="password" class="form__input input" name="password" placeholder="Password"/>
+                <button type="submit" class="form__submit button">Sign In</button>
+            </form>
+
+            <a href="#" class="form__link">Forgot your password</a>
+        </div>
+
     </div>
-
 </div>
+
 
 </body>
 </html>
