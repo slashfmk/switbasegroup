@@ -1,0 +1,18 @@
+{
+  "name": "swift_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p live-server watch:scss",
+    "watch:scss": "sass --watch scss:styles",
+    "live-server": "live-server"
+  },
+  "author": "yannick fumukani",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.33.0"
+  }
+}
