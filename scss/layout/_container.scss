@@ -24,11 +24,10 @@
   &__sign-in {
     align-self: center;
     justify-self: center;
-    width: 30rem;
-    height: 30rem;
-    padding: 5rem;
+    width: 25rem;
+    padding: 3rem;
     background-color: abstracts.$primary-white;
-    @include abstracts.border-radius(.5);
+    @include abstracts.border-radius(.2);
     // background-color: abstracts.$primary-white;
     // background: url("../../assets/images/bg_home.jpg");
   }

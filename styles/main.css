@@ -93,21 +93,20 @@
 .container__sign-in {
   align-self: center;
   justify-self: center;
-  width: 30rem;
-  height: 30rem;
-  padding: 5rem;
+  width: 25rem;
+  padding: 3rem;
   background-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
 }
 .title__sub {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0.5rem 0;
 }
 
