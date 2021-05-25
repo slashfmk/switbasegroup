@@ -27,7 +27,7 @@
     width: 25rem;
     padding: 3rem;
     background-color: abstracts.$primary-white;
-    @include abstracts.border-radius(.2);
+    @include abstracts.border-radius();
     // background-color: abstracts.$primary-white;
     // background: url("../../assets/images/bg_home.jpg");
   }

@@ -17,8 +17,8 @@
   }
 }
 
-@mixin border-radius ($border) {
-    border-radius: $border+rem;
+@mixin border-radius ($border: .5rem) {
+    border-radius: #{$border};
 }
 
 // Round image borders

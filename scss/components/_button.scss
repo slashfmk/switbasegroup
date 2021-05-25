@@ -10,7 +10,7 @@
   margin: .3rem;
   color: abstracts.$primary-white;
   @include abstracts.default-font;
-  @include abstracts.border-radius(.3);
+  @include abstracts.border-radius(.3rem);
 
   transition: all .5s;
 
