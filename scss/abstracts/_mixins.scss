@@ -21,6 +21,16 @@
     border-radius: $border+rem;
 }
 
+// Round image borders
+@mixin border-radius-photo ($width : 5rem, $height : 5rem) {
+  width: $width;
+  height: $height;
+
+  border-radius: calc(#{$width} / 2);
+  -moz-border-radius: calc(#{$width} / 2);
+  -webkit-border-radius: calc(#{$width} / 2);
+}
+
 @mixin default-font(){
   font-family: 'Montserrat', sans-serif;
 }

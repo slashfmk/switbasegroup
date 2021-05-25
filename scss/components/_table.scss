@@ -1,0 +1,83 @@
+@use "../abstracts";
+
+.table {
+
+  margin: 3rem;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(abstracts.$primary-dark, .2);
+  background-color: white;
+  height: fit-content;
+
+  border-collapse: collapse;
+  // display: table;
+
+  &__thead,  & thead {
+
+    color: abstracts.$light-grey;
+    background-color: #343a40;
+
+  }
+
+  & tbody tr {
+  //  border: solid 1px #000;
+  }
+
+
+  & th td thead {
+    padding: .5rem;
+  }
+
+  & tr {
+    background: #f6f6f6;
+    border-bottom: solid .5px #e5e3e3;
+
+    &:nth-of-type(odd) {
+      background: #e9e9e9;
+    }
+
+  }
+
+  &__photo {
+    @include abstracts.border-radius-photo(3rem, 3rem);
+  }
+
+  @media screen and (max-width: 780px) {
+    & tbody tr td {
+      width: 100%;
+      display: block;
+      text-align: right;
+    }
+
+    & td {
+      padding: .5rem 0;
+      display: block;
+      position: relative;
+      right: 50%;
+      left: -10%;
+
+      &:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding: 0 0 0 1.5rem;
+        font-weight: 900;
+      }
+    }
+
+    & td[data-title] {
+      color: abstracts.$primary-dark;
+    }
+
+    & thead {
+      display: none;
+    }
+
+    & tr {
+      margin: 1rem;
+    }
+
+  }
+
+}
+
