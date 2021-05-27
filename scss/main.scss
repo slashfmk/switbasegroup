@@ -13,11 +13,23 @@ body {
   background-color: abstracts.$light-grey;
   font-size: .8rem;
   @include abstracts.default-font;
+  color: abstracts.$primary-dark;
 }
 
 a {
   text-decoration: none;
   color: abstracts.$primary-dark;
+}
+
+input[type = "text"] {
+  color: lighten(abstracts.$primary-dark, 35%);
+}
+
+.page_title {
+  margin: 1rem 1rem;
+  font-weight: 500;
+  color: lighten(abstracts.$primary-dark, 35%);
+ // grid-column: 1 / 13;
 }
 
 .container {

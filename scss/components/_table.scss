@@ -2,20 +2,20 @@
 
 .table {
 
-  margin: 3rem 3rem;
+ // margin: 3rem 3rem;
   width: 100%;
   box-shadow: 0 1px 3px rgba(abstracts.$primary-dark, .2);
   // background-color: white;
   height: fit-content;
 
-  @include abstracts.border-radius(.4rem);
+  @include abstracts.border-radius(.3rem);
   overflow: hidden;
   border-collapse: collapse;
 
   & thead, & th {
 
     color: abstracts.$light-grey;
-    background-color: #343a40;
+    background-color: lighten(abstracts.$primary-dark, 25%); //lighten(#343a40, 33%);
     text-align: left;
     padding: .8rem;
     font-weight: 600;
@@ -52,7 +52,12 @@
   }
 
   // media query for the table responsiveness
-  @media screen and (max-width: 780px) {
+  @media (max-width: 554px) {
+
+    & {
+      margin: .6rem .5rem;
+    }
+
     & tbody tr td {
       width: 100%;
       display: block;
@@ -79,7 +84,11 @@
         color: abstracts.$primary-dark;
       }
 
+    }
 
+    &__photo {
+     // margin: .4rem;
+      @include abstracts.border-radius-photo(3rem, 3rem);
     }
 
 

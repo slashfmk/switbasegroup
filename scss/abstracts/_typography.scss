@@ -1,0 +1,23 @@
+@use "fonts";
+@use "colors";
+
+.heading {
+
+  font-family: 'Montserrat', sans-serif;
+  color: colors.$secondary-dark;
+  margin: .5rem 0;
+  font-weight: 500;
+
+  &--xxxl {
+    font-size: 2rem;
+  }
+
+  &--xxl{
+    font-size: 1.8rem;
+  }
+
+  &--xl{
+    font-size: 1.5rem;
+  }
+
+}

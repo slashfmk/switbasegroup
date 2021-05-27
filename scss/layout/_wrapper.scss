@@ -1,0 +1,93 @@
+@use "../abstracts";
+@use "../components";
+
+// Grid system layout based on cols and auto-fit
+.wrapper {
+
+  &__sml-centered {
+    width: 25rem;
+    padding: 3rem;
+    background-color: abstracts.$primary-white;
+    @include abstracts.border-radius();
+
+
+    @media (max-width: 426px) {
+      width: 100%;
+      height: 100%;
+      margin: 0 1rem;
+      padding: 1rem;
+      display: grid;
+      align-content: center;
+    }
+
+  }
+
+
+  //&__attendance, &__grade {
+  //  grid-column: 2 / 12;
+  //  display: grid;
+  //  margin-top: 0;
+  //
+  //  grid-auto-rows: min-content;
+  //
+  //  @media (max-width: 554px){
+  //    grid-column: 1 / 13;
+  //  }
+  //}
+
+
+  &__grid--autofit {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
+  &__grid--12 {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
+  &__grid--8 {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
+  &__grid--4 {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
+
+  //&__home__card {
+  //  width: 100%;
+  //  display: grid;
+  //  margin: 0 auto;
+  //  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  //
+  //  grid-gap: .5rem;
+  //  grid-auto-rows: min-content;
+  //  justify-items: center;
+  //
+  //}
+
+
+}
