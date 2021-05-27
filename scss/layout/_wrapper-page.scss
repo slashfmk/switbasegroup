@@ -1,3 +1,10 @@
+
+/*
+By Yannick Fumukani
+copyright 2021
+ */
+
+
 // contains the entire page in it
 
 @use "../abstracts";
@@ -11,6 +18,12 @@
 
   &--default {
 
+  }
+
+  &--centered {
+    display: grid;
+    align-items: center;
+    // justify-items: center;
   }
 
   &--sign-in {

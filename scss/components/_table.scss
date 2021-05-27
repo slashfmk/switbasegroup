@@ -1,12 +1,18 @@
 @use "../abstracts";
 
+/*
+Table template v.1
+By Yannick Fumukani
+copyright 2021
+ */
+
 .table {
 
  // margin: 3rem 3rem;
   width: 100%;
   box-shadow: 0 1px 3px rgba(abstracts.$primary-dark, .2);
-  // background-color: white;
   height: fit-content;
+  grid-column: 1 / 13;
 
   @include abstracts.border-radius(.3rem);
   overflow: hidden;

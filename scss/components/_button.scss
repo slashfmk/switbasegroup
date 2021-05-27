@@ -1,3 +1,7 @@
+/*
+By Yannick Fumukani
+copyright 2021
+ */
 
 @use "../abstracts";
 
@@ -17,7 +21,7 @@
   &:hover{
     cursor: pointer;
     border: none;
-    background-color: abstracts.$primary-dark;
+    background-color: darken(abstracts.$primary-color, 15%);
   }
 
   &--opaque{

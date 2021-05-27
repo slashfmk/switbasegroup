@@ -1,10 +1,16 @@
+/*
+By Yannick Fumukani
+copyright 2021
+ */
+
 @use "../abstracts";
 
 .card {
 
   display: grid;
   color: abstracts.$light-grey;
-  background-color: abstracts.$secondary-dark; //#212529;
+  // background-color: abstracts.$secondary-dark; //#212529;
+  background-color: abstracts.$cool-grey;
   padding: 1.2rem;
 
   width: 20rem;
@@ -29,8 +35,14 @@
     color: abstracts.$primary-color;
   }
 
+  &:hover > &__logo {
+    transition: all .8s;
+    background-color: white;
+  }
+
   &__logo {
-    background-color: abstracts.$light-grey;
+    // background-color: abstracts.$light-grey;
+    background-color: #a5a9ac;
     @include abstracts.border-radius-photo(5rem, 5rem);
     grid-column: 1 / 2;
     justify-self: center;

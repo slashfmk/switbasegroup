@@ -76,6 +76,36 @@
     justify-items: center;
   }
 
+  &__grid--3 {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
+  &__grid--2 {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
+  &__grid--1 {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: min-content;
+    justify-items: center;
+  }
+
 
   //&__home__card {
   //  width: 100%;

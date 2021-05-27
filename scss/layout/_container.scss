@@ -1,14 +1,27 @@
+
+/*
+Container template v.1
+By Yannick Fumukani
+copyright 2021
+ */
+
 @use "../abstracts";
 @use "../components";
 
 .container {
   width: 100%;
   height: 100vh;
-  //display: grid;
-  //grid-template-columns: repeat(12, 1fr);
+
+
+  &-xxxl {
+    max-width: 2024px;
+    height: auto;
+    margin: 0 auto;
+    padding: .8rem;
+  }
 
   &-xxl {
-    max-width: 2024px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
     padding: .8rem;
@@ -21,15 +34,25 @@
     padding: .8rem;
   }
 
+  &-x {
+    max-width: 992px;
+    height: auto;
+    margin: 0 auto;
+    padding: .8rem;
+  }
 
-  //&__attendance, &__grade {
-  // // grid-auto-rows: min-content;
-  //}
-  //
-  //&__home {
-  //  align-items: center;
-  // // grid-template-rows: 1fr;
-  // // grid-auto-rows: min-content;
-  //}
+  &-xx {
+    max-width: 768px;
+    height: auto;
+    margin: 0 auto;
+    padding: .8rem;
+  }
+
+  &-xx {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: .8rem;
+  }
 
 }

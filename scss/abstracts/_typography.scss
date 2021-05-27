@@ -1,11 +1,16 @@
+/*
+By Yannick Fumukani
+copyright 2021
+ */
+
 @use "fonts";
 @use "colors";
 
 .heading {
 
   font-family: 'Montserrat', sans-serif;
-  color: colors.$secondary-dark;
-  margin: .5rem 0;
+ // color: colors.$secondary-dark;
+  margin: 1rem 0;
   font-weight: 500;
 
   &--xxxl {
