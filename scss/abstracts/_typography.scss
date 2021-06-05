@@ -9,20 +9,53 @@ copyright 2021
 .heading {
 
   font-family: 'Montserrat', sans-serif;
- // color: colors.$secondary-dark;
-  margin: 1rem 0;
-  font-weight: 500;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  display: grid;
+  justify-self: left;
+
+  @media (max-width: 562px){
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  &__center{
+    justify-self: center;
+  }
 
   &--xxxl {
     font-size: 2rem;
   }
 
-  &--xxl{
+  &--xxl {
     font-size: 1.8rem;
   }
 
-  &--xl{
+  &--xl {
     font-size: 1.5rem;
   }
 
 }
+
+.title--upper {
+
+  font-weight: 300;
+  font-size: 2rem;
+
+
+  @media (max-width: 300px){
+    text-align: center;
+    //grid-column: 5 / 9;
+    // display: block;
+    justify-self: center;
+  }
+}
+
+.subHeading {
+
+
+  @media (max-width: 546px){
+    text-align: center;
+  }
+}
+

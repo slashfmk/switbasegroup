@@ -8,7 +8,7 @@ copyright 2021
 
 .table {
 
- // margin: 3rem 3rem;
+  // margin: 3rem 3rem;
   width: 100%;
   box-shadow: 0 1px 3px rgba(abstracts.$primary-dark, .2);
   height: fit-content;
@@ -17,6 +17,8 @@ copyright 2021
   @include abstracts.border-radius(.3rem);
   overflow: hidden;
   border-collapse: collapse;
+
+
 
   & thead, & th {
 
@@ -49,8 +51,47 @@ copyright 2021
     &:nth-of-type(odd) {
       background: abstracts.$light-grey;
     }
-
   }
+
+
+  //&__simple {
+  //
+  //
+  //  & thead, & th {
+  //
+  //    color: abstracts.$light-grey;
+  //    background-color: lighten(abstracts.$primary-dark, 25%); //lighten(#343a40, 33%);
+  //    text-align: left;
+  //    padding: .8rem;
+  //    font-weight: 600;
+  //
+  //  }
+  //
+  //  &__active td {
+  //    background-color: abstracts.$primary-dark;
+  //    color: abstracts.$light-grey;
+  //  }
+  //
+  //
+  //  & th td thead {
+  //    padding: .5rem;
+  //  }
+  //
+  //  & tr {
+  //    background: #fff;
+  //    border-bottom: solid .5px #e5e3e3;
+  //
+  //    &:last-child {
+  //      border: none;
+  //    }
+  //
+  //    &:nth-of-type(odd) {
+  //    //  background: abstracts.$light-grey;
+  //    }
+  //  }
+  //
+  //}
+
 
   &__photo {
     margin: .4rem;
@@ -93,7 +134,7 @@ copyright 2021
     }
 
     &__photo {
-     // margin: .4rem;
+      // margin: .4rem;
       @include abstracts.border-radius-photo(3rem, 3rem);
     }
 

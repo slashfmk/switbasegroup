@@ -9,4 +9,11 @@ copyright 2021
 
 .section {
   max-width: 100%;
+
+  &__dark {
+  background-color: abstracts.$primary-dark;
+    color: abstracts.$light-grey;
+  }
+
+
 }

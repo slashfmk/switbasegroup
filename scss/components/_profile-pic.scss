@@ -1,0 +1,27 @@
+
+@use "../abstracts";
+
+.profile__pic {
+
+  @include abstracts.border-radius-photo(16rem, 16rem);
+ // width: 10rem;
+ // height: 10rem;
+ // border-radius: 5rem;
+
+  @media (max-width: 300px){
+    @include abstracts.border-radius-photo(8rem, 8rem);
+    text-align: center;
+    //grid-column: 5 / 9;
+    // display: block;
+    justify-self: center;
+  }
+
+  &__border {
+    border: solid 6px abstracts.$cool-grey;
+  }
+
+  &--xxl {
+
+  }
+
+}
